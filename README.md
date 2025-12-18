@@ -2,7 +2,7 @@
 
 A learning-focused project to build a complete data platform using modern **DevOps**, **DataOps**, and **Data Engineering** tools.
 
-[![CI Quality Check](https://github.com/YOUR_USERNAME/weather-dataops-platform/actions/workflows/ci.yaml/badge.svg)](https://github.com/YOUR_USERNAME/weather-dataops-platform/actions/workflows/ci.yaml)
+[![CI Quality Check](https://github.com/marcocuevs/weather-dataops-platform/actions/workflows/ci.yaml/badge.svg)](https://github.com/marcocuevs/weather-dataops-platform/actions/workflows/ci.yaml)
 
 ## Goal
 
@@ -75,7 +75,7 @@ Full documentation is available in both English and Spanish:
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/weather-dataops-platform.git
+git clone https://github.com/marcocuevs/weather-dataops-platform.git
 cd weather-dataops-platform
 
 # See available commands
