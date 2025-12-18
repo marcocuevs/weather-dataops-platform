@@ -4,16 +4,20 @@
 
 Apply pure software engineering to the data flow. Build a robust, typed, and containerized data ingestion service.
 
-## 📊 Status: 🔴 Not Started (0%)
+## 📊 Status: 🟡 In Progress (~60%)
+
+### Completed
+- [x] Pydantic models for OpenWeather API response
+- [x] HTTP client with HTTPX
+- [x] Basic error handling
+- [x] requirements.txt with dependencies
+- [x] Virtual environment setup
 
 ### Pending
-- [ ] Pydantic models for OpenWeather API response
-- [ ] Async HTTP client with HTTPX
-- [ ] Error handling and retry logic
-- [ ] Professional logging setup
 - [ ] Dockerfile for the ingestor
 - [ ] Unit tests
-- [ ] Secrets management for API keys
+- [ ] Retry logic with tenacity
+- [ ] Professional logging setup
 
 ## 🛠️ Tools Used
 

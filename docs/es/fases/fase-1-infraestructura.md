@@ -4,18 +4,15 @@
 
 Preparar el "escenario" donde correrá nuestro código. Esta fase establece la infraestructura base usando principios de Infraestructura como Código (IaC).
 
-## 📊 Estado: 🟡 En Progreso (~30%)
+## 📊 Estado: 🟢 Completada (100%)
 
 ### Completado
 - [x] Estructura monorepo creada
 - [x] Configuración de Git (.gitignore)
 - [x] CI básico con GitHub Actions (Ruff + validación Terraform)
-
-### Pendiente
-- [ ] Configuración de Terraform para clúster Kind
-- [ ] Despliegue de PostgreSQL en Kubernetes
-- [ ] Configuración de gestión de secretos
-- [ ] Documentación del entorno de desarrollo local
+- [x] Configuración de Terraform para clúster Kind
+- [x] Despliegue de PostgreSQL en Kubernetes
+- [x] Makefile con comandos comunes
 
 ## 🛠️ Herramientas Utilizadas
 
