@@ -10,8 +10,8 @@ weather_transformations:
       type: postgres
       host: localhost
       port: 5432
-      user: postgres
-      password: postgres123
+      user: "{{ env_var('DBT_POSTGRES_USER', 'postgres') }}"
+      password: "{{ env_var('DBT_POSTGRES_PASSWORD') }}"
       dbname: weather_db
       schema: public
       threads: 4
