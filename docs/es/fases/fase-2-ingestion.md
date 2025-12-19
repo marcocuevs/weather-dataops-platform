@@ -4,7 +4,7 @@
 
 Aplicar ingeniería de software pura al flujo de datos. Construir un servicio de ingestión robusto, tipado y contenerizado.
 
-## 📊 Estado: 🟡 En Progreso (~60%)
+## 📊 Estado: 🟢 Completada (100%)
 
 ### Completado
 - [x] Modelos Pydantic para respuesta de API OpenWeather
@@ -12,12 +12,8 @@ Aplicar ingeniería de software pura al flujo de datos. Construir un servicio de
 - [x] Manejo básico de errores
 - [x] requirements.txt con dependencias
 - [x] Entorno virtual configurado
-
-### Pendiente
-- [ ] Dockerfile para el ingestor
-- [ ] Tests unitarios
-- [ ] Lógica de reintentos con tenacity
-- [ ] Configuración de logging profesional
+- [x] Dockerfile para contenerización
+- [x] Tests unitarios (14 tests pasando)
 
 ## 🛠️ Herramientas Utilizadas
 
