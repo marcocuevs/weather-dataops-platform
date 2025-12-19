@@ -12,11 +12,11 @@ Build a clonable, automated data platform that extracts weather data from OpenWe
 
 | Phase | Status | Progress |
 |-------|--------|----------|
-| Phase 1: Infrastructure | In Progress | ~30% |
-| Phase 2: Ingestion | Not Started | 0% |
-| Phase 3: Orchestration | Not Started | 0% |
-| Phase 4: Transformation | Not Started | 0% |
-| Phase 5: Visualization | Not Started | 0% |
+| Phase 1: Infrastructure | ✅ Completed | 100% |
+| Phase 2: Ingestion | ✅ Completed | 100% |
+| Phase 3: Orchestration | ✅ Completed | 100% |
+| Phase 4: Transformation | 🔴 Not Started | 0% |
+| Phase 5: Visualization | 🔴 Not Started | 0% |
 
 ## Tech Stack
 
