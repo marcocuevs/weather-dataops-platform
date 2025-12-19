@@ -8,9 +8,6 @@ from src.models import (
     Coordinates,
     WeatherCondition,
     MainMetrics,
-    Wind,
-    Clouds,
-    SystemInfo,
     WeatherResponse,
 )
 

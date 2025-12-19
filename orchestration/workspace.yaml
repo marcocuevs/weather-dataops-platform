@@ -1,0 +1,7 @@
+# =============================================================================
+# Dagster Workspace Configuration
+# Tells Dagster where to find our code (Definitions)
+# =============================================================================
+
+load:
+  - python_file: weather_pipeline/__init__.py

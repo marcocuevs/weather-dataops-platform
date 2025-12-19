@@ -1,56 +1,29 @@
 # =============================================================================
-# Makefile - Weather DataOps Platform
+# Weather DataOps Platform - Dependencies
 # =============================================================================
 
-.PHONY: setup-python clean test lint dagster-dev infra-init infra-plan infra-apply infra-destroy
+# -----------------------------------------------------------------------------
+# HTTP Client
+# -----------------------------------------------------------------------------
+httpx>=0.25.0
 
 # -----------------------------------------------------------------------------
-# Python Setup
+# Data Validation
 # -----------------------------------------------------------------------------
-
-setup-python:
-	python -m venv .venv
-	./.venv/Scripts/pip install -r requirements.txt
+pydantic>=2.5.0
 
 # -----------------------------------------------------------------------------
-# Testing & Linting
+# Orchestration (Dagster)
 # -----------------------------------------------------------------------------
-
-test:
-	./.venv/Scripts/pytest ingestion/tests -v
-
-lint:
-	./.venv/Scripts/ruff check .
-
-lint-fix:
-	./.venv/Scripts/ruff check --fix .
+dagster>=1.6.0
+dagster-webserver>=1.6.0
 
 # -----------------------------------------------------------------------------
-# Dagster (Orchestration)
+# Testing
 # -----------------------------------------------------------------------------
-
-dagster-dev:
-	cd orchestration && ../.venv/Scripts/dagster dev
+pytest>=7.4.0
 
 # -----------------------------------------------------------------------------
-# Cleanup
+# Linting
 # -----------------------------------------------------------------------------
-
-clean:
-	Remove-Item -Recurse -Force -ErrorAction SilentlyContinue __pycache__, .terraform, .venv
-
-# -----------------------------------------------------------------------------
-# Infrastructure (Terraform)
-# -----------------------------------------------------------------------------
-
-infra-init:
-	cd infra && terraform init
-
-infra-plan:
-	cd infra && terraform plan
-
-infra-apply:
-	cd infra && terraform apply
-
-infra-destroy:
-	cd infra && terraform destroy
+ruff>=0.1.0
