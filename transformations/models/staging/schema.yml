@@ -1,0 +1,27 @@
+# =============================================================================
+# Schema definition for staging models
+# Defines sources and model documentation/tests
+# =============================================================================
+
+version: 2
+
+sources:
+  - name: raw
+    description: "Raw data from weather API ingestion"
+    schema: public
+    tables:
+      - name: weather_data
+        description: "Raw weather data from OpenWeather API"
+
+models:
+  - name: stg_weather
+    description: "Cleaned and standardized weather data"
+    columns:
+      - name: city_name
+        description: "Name of the city"
+      - name: temp_celsius
+        description: "Temperature in Celsius"
+        tests:
+          - not_null
+      - name: humidity_percent
+        description: "Humidity percentage (0-100)"

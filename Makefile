@@ -33,6 +33,19 @@ dagster-dev:
 	cd orchestration && ../.venv/Scripts/dagster dev
 
 # -----------------------------------------------------------------------------
+# dbt (Transformation)
+# -----------------------------------------------------------------------------
+
+dbt-run:
+	cd transformations && ../.venv/Scripts/dbt run --profiles-dir .
+
+dbt-test:
+	cd transformations && ../.venv/Scripts/dbt test --profiles-dir .
+
+dbt-docs:
+	cd transformations && ../.venv/Scripts/dbt docs generate --profiles-dir .
+
+# -----------------------------------------------------------------------------
 # Cleanup
 # -----------------------------------------------------------------------------
 

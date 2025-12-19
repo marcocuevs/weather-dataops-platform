@@ -1,0 +1,39 @@
+# =============================================================================
+# dbt Project Configuration
+# This file tells dbt about your project structure and settings
+# =============================================================================
+
+name: 'weather_transformations'
+version: '1.0.0'
+
+# Directory where dbt looks for models
+model-paths: ["models"]
+
+# Directory for seeds (CSV files to load)
+seed-paths: ["seeds"]
+
+# Directory for tests
+test-paths: ["tests"]
+
+# Directory for macros (reusable SQL snippets)
+macro-paths: ["macros"]
+
+# Directory for compiled SQL (generated)
+target-path: "target"
+
+# Files to ignore
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+# Model configurations
+models:
+  weather_transformations:
+    # Staging models: views (faster to build, no storage)
+    staging:
+      +materialized: view
+      +schema: staging
+    # Mart models: tables (better for dashboards)
+    marts:
+      +materialized: table
+      +schema: marts
